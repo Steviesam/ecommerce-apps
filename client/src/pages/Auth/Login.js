@@ -19,7 +19,7 @@ const Login = () => {
     e.preventDefault();
     try {
       // Update the URL to match your backend server's URL
-      const res = await axios.post("http://localhost:8080/api/v1/auth/login", {
+      const res = await axios.post("/api/v1/auth/login", {
         email,
         password,
       });
